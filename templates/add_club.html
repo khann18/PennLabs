@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>formDemo.html</title>
+    <meta charset = "UTF-8" />
+  </head>
+  <body>
+    <h1>Add a Club</h1>
+    <form action="/api/clubs" method="post">
+      <label for="code">Club Code:</label><br>
+      <input type="text" id="code" name="code"><br>
+      <label for="name">Club Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="description">Description:</label><br>
+      <input type="text" id="description" name="description"><br>
+      <label for="tags">Tags (semicolon divided):</label><br>
+      <input type="text" id="tags" name="tags"><br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

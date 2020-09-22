@@ -2,7 +2,15 @@
 
 ## Documentation
 
-Fill out this section as you complete the challenge!
+The extra routes - I made additional routes to allow me to create some (very) simple forms for (very) simple frontend. I did not use the reference frontend and decided to just access http://127.0.0.1:5000
+
+  - /api/home has a navbar that links to those simple forms and tag_count also. I didn't have a chance to finish the functionality for search users (it is 9/21 11:39PM right now), but the /user/:username route should still work by itself. 
+
+SQLAlchemy - I created 3 objects (User, Club, Tag). User has properties of username, password, id, email, firstname, lastname, and clubs. The ones I considered to be private were password, id, and email (so they're not returned in /user). Club has the same characteristics as in the json provided, and I chose to store its tags as a semicolon separated string (at first I didn't have the Tag class, but I decided it was fine not to change it to a many-to-many relationship bc it's not important for someone who is in a club to know the count, which is an attribute of a Tag).
+
+bootstrap.py - I ended up putting most of the SQLAlchemy queries there to keep things more uniform. Some functions in app.py access those in bootstrap.py, such as that creating a new club.
+
+
 
 ## Installation
 
